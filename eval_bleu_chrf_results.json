@@ -1,0 +1,443 @@
+{
+  "model": "taiviet-bot",
+  "dataset": "/home/ghuyxd/finetune/dataset/val.jsonl",
+  "total_test_samples": 26811,
+  "evaluated_samples": 1000,
+  "elapsed_seconds": 147.64,
+  "samples_per_second": 6.77,
+  "overall_metrics": {
+    "count": 1000,
+    "bleu_standard": 4.17,
+    "bleu_add_k": 4.3,
+    "sentence_bleu": 23.09,
+    "chrf": 14.32,
+    "chrf_plus_plus": 14.45,
+    "exact_match": 11.6,
+    "contains_match": 13.1
+  },
+  "category_metrics": {
+    "Thái Việt -> Tiếng Việt": {
+      "count": 616,
+      "bleu_standard": 3.69,
+      "bleu_add_k": 3.8,
+      "sentence_bleu": 14.43,
+      "chrf": 11.75,
+      "chrf_plus_plus": 11.77,
+      "exact_match": 6.66,
+      "contains_match": 8.12
+    },
+    "Tiếng Việt -> Thái Việt": {
+      "count": 384,
+      "bleu_standard": 12.86,
+      "bleu_add_k": 17.24,
+      "sentence_bleu": 37.0,
+      "chrf": 27.8,
+      "chrf_plus_plus": 27.62,
+      "exact_match": 19.53,
+      "contains_match": 21.09
+    }
+  },
+  "table_markdown": "| Tác vụ                  |   Số mẫu |   BLEU (smoothed) |   Sent-BLEU |   chrF |   chrF++ | Khớp tuyệt đối (EM)   | Chứa đáp án   |\n|-------------------------|----------|-------------------|-------------|--------|----------|-----------------------|---------------|\n| Tổng thể (Overall)      |    1,000 |              4.3  |       23.09 |  14.32 |    14.45 | 11.60%                | 13.10%        |\n| Thái Việt -> Tiếng Việt |      616 |              3.8  |       14.43 |  11.75 |    11.77 | 6.66%                 | 8.12%         |\n| Tiếng Việt -> Thái Việt |      384 |             17.24 |       37    |  27.8  |    27.62 | 19.53%                | 21.09%        |",
+  "sample_predictions": [
+    {
+      "id": 8299,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪔꪲꪣ ꪗꪉꪴ",
+      "reference": "đây thùng",
+      "prediction": "đầy túi",
+      "cleaned_prediction": "đầy túi"
+    },
+    {
+      "id": 1918,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Nghĩa tiếng Việt của \"ꪩꪲꪙ ꪵꪣꪫ\" là gì?",
+      "reference": "cây lưỡi mèo, cây chỉ thiên (cỏ lịn méo, tên khoa học là",
+      "prediction": "lưỡi méo",
+      "cleaned_prediction": "lưỡi méo"
+    },
+    {
+      "id": 20536,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪔꪴ ꪔꪲ",
+      "reference": "(tiếng thổi bễ) phì phò",
+      "prediction": "cái đùi",
+      "cleaned_prediction": "cái đùi"
+    },
+    {
+      "id": 18243,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Nghĩa tiếng Việt của \"ꪤꪉꪰ ꪬꪲꪫ\" là gì?",
+      "reference": "nghi hưu",
+      "prediction": "dặm kỹ",
+      "cleaned_prediction": "dặm kỹ"
+    },
+    {
+      "id": 16629,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "\"ꪨꪱ ꪒꪉꪴ\" trong tiếng Thái nghĩa là gì?",
+      "reference": "cuối rừng,",
+      "prediction": "cuối rừng",
+      "cleaned_prediction": "cuối rừng"
+    },
+    {
+      "id": 10458,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Dịch sang tiếng Việt: ꪅꪷꪙ",
+      "reference": "đg. cúng, khấn",
+      "prediction": "cái khung cửi",
+      "cleaned_prediction": "cái khung cửi"
+    },
+    {
+      "id": 7596,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Nghĩa tiếng Việt của \"ꪣꪀꪰ\" là gì?",
+      "reference": "mắc, bận",
+      "prediction": "đg. bị mắc, bị vướng, bị kẹp",
+      "cleaned_prediction": "đg. bị mắc, bị vướng, bị kẹp"
+    },
+    {
+      "id": 6473,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪀꪾ ꪞꪀ\" có nghĩa là gì?",
+      "reference": "nắm rau",
+      "prediction": "cái gai",
+      "cleaned_prediction": "cái gai"
+    },
+    {
+      "id": 31557,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪡꪮꪉ\" có nghĩa là gì?",
+      "reference": "phòng,",
+      "prediction": "phòng, phòng ban",
+      "cleaned_prediction": "phòng, phòng ban"
+    },
+    {
+      "id": 2431,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪕꪱꪀ ꪝꪙꪴ",
+      "reference": "tạc pùn",
+      "prediction": "đg. chúc mừng",
+      "cleaned_prediction": "đg. chúc mừng"
+    },
+    {
+      "id": 2275,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪨꪸꪙ ꪘꪱ",
+      "reference": "chói mắt",
+      "prediction": "đg. liếc mắt",
+      "cleaned_prediction": "đg. liếc mắt"
+    },
+    {
+      "id": 7002,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪶꪔ",
+      "reference": "thân mình (của con vật)",
+      "prediction": "đg. chốt, khóa",
+      "cleaned_prediction": "đg. chốt, khóa"
+    },
+    {
+      "id": 16293,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "\"ꪉꪱꪚ ꪜꪮꪒ\" trong tiếng Thái nghĩa là gì?",
+      "reference": "lao phôi",
+      "prediction": "gươm đâm",
+      "cleaned_prediction": "gươm đâm"
+    },
+    {
+      "id": 17301,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Nghĩa tiếng Việt của \"ꪔꪚꪾ\" là gì?",
+      "reference": "lá gan, buồng gan",
+      "prediction": "đg. đạp, giẫm",
+      "cleaned_prediction": "đg. đạp, giẫm"
+    },
+    {
+      "id": 2034,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪮꪱꪫ ꪨꪱꪙ",
+      "reference": "chú cháu",
+      "prediction": "ước cháu,",
+      "cleaned_prediction": "ước cháu"
+    },
+    {
+      "id": 14814,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪒꪱꪉ ꪬꪙꪳ",
+      "reference": "đang độ",
+      "prediction": "đỏ lên",
+      "cleaned_prediction": "đỏ lên"
+    },
+    {
+      "id": 31374,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪀꪾ ꪀꪺ",
+      "reference": "tỉ mẩn, tẩn mẩn",
+      "prediction": "cái cùm",
+      "cleaned_prediction": "cái cùm"
+    },
+    {
+      "id": 16431,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪠꪮꪥ",
+      "reference": "thành nhúm, thành chòm",
+      "prediction": "đg. phơi, phơi bày",
+      "cleaned_prediction": "đg. phơi, phơi bày"
+    },
+    {
+      "id": 33611,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪄꪫꪱꪥ",
+      "reference": "khoái, khoan khoái",
+      "prediction": "đg. khai hoa, nở hoa",
+      "cleaned_prediction": "đg. khai hoa, nở hoa"
+    },
+    {
+      "id": 20774,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Dịch sang tiếng Việt: ꪖꪱꪉ ꪼꪒ",
+      "reference": "cầu thang,",
+      "prediction": "đg. dắt tay con",
+      "cleaned_prediction": "đg. dắt tay con"
+    },
+    {
+      "id": 526,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪣꪷ",
+      "reference": "bói, mọ(l)",
+      "prediction": "mỏ, cái mỏ",
+      "cleaned_prediction": "mỏ, cái mỏ"
+    },
+    {
+      "id": 11937,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪎꪴ ꪵꪡꪚ\" có nghĩa là gì?",
+      "reference": "đg. tuân phép",
+      "prediction": "cây sậy (cỏ xú phẹp, tên khoa học là Phragmites australis)",
+      "cleaned_prediction": "cây sậy (cỏ xú phẹp, tên khoa học là Phragmites australis)"
+    },
+    {
+      "id": 31611,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "\"ꪵꪮꪚ ꪄꪚꪾ\" trong tiếng Thái nghĩa là gì?",
+      "reference": "học hát",
+      "prediction": "tập hát",
+      "cleaned_prediction": "tập hát"
+    },
+    {
+      "id": 25406,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪹꪋꪸꪒ ꪶꪔ",
+      "reference": "lau người",
+      "prediction": "túi người,",
+      "cleaned_prediction": "túi người"
+    },
+    {
+      "id": 20756,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪵꪎꪙ",
+      "reference": "muôn, tiên,",
+      "prediction": "đg. chen, gạt",
+      "cleaned_prediction": "đg. chen, gạt"
+    },
+    {
+      "id": 11590,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪣꪙꪳ ꪵꪎꪙ\" có nghĩa là gì?",
+      "reference": "một tỉ, một nghìn triệu (1.000.000.000, thường dùng",
+      "prediction": "mềm nhũn",
+      "cleaned_prediction": "mềm nhũn"
+    },
+    {
+      "id": 16040,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Dịch sang tiếng Việt: ꪈꪱꪉ ꪈꪱꪉ",
+      "reference": "chang chang",
+      "prediction": "ngời ngời",
+      "cleaned_prediction": "ngời ngời"
+    },
+    {
+      "id": 25149,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪀꪮꪉ ꪶꪙꪙ\" có nghĩa là gì?",
+      "reference": "giã kỹ",
+      "prediction": "đống bùn",
+      "cleaned_prediction": "đống bùn"
+    },
+    {
+      "id": 7581,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪝꪲ ꪜꪱ",
+      "reference": "chị vợ; chị chồng",
+      "prediction": "béo cá",
+      "cleaned_prediction": "béo cá"
+    },
+    {
+      "id": 6913,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Dịch sang tiếng Việt: ꪔꪲꪙ ꪹꪎꪱ",
+      "reference": "chân cột",
+      "prediction": "đg. đặt cột",
+      "cleaned_prediction": "đg. đặt cột"
+    },
+    {
+      "id": 28334,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Nghĩa tiếng Việt của \"ꪁꪱꪉ\" là gì?",
+      "reference": "đg. bắc lên, đặt lên",
+      "prediction": "cái cằm",
+      "cleaned_prediction": "cái cằm"
+    },
+    {
+      "id": 7224,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪹꪋꪰ ꪶꪭꪉ ꪹꪋꪰ ꪹꪭꪸꪉ\" có nghĩa là gì?",
+      "reference": "thưa thớt, lưa thưa",
+      "prediction": "lâu dài, lâu dài",
+      "cleaned_prediction": "lâu dài, lâu dài"
+    },
+    {
+      "id": 26868,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Dịch sang tiếng Việt: ꪹꪁꪰꪉ",
+      "reference": "đg. bá cổ, quàng cổ, quàng vai (nhau)",
+      "prediction": "cái còng",
+      "cleaned_prediction": "cái còng"
+    },
+    {
+      "id": 25693,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪵꪣꪉ ꪬꪲꪙ",
+      "reference": "sâu đá",
+      "prediction": "con hến",
+      "cleaned_prediction": "con hến"
+    },
+    {
+      "id": 19729,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪊꪱꪉ ꪀꪾ",
+      "reference": "tên một loài cây thân thảo (nha chánh cắm)",
+      "prediction": "đg. cúng múa",
+      "cleaned_prediction": "đg. cúng múa"
+    },
+    {
+      "id": 3275,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪔꪾ",
+      "reference": "dệt, thấp",
+      "prediction": "đg. đâm, chọc, vướng",
+      "cleaned_prediction": "đg. đâm, chọc, vướng"
+    },
+    {
+      "id": 34406,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Nghĩa tiếng Việt của \"ꪵꪎ\" là gì?",
+      "reference": "bột đao",
+      "prediction": "đg. xỏ, cài, đeo",
+      "cleaned_prediction": "đg. xỏ, cài, đeo"
+    },
+    {
+      "id": 9319,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪻꪊ ꪹꪎꪸꪫ",
+      "reference": "hâu người ta",
+      "prediction": "tâm hồn",
+      "cleaned_prediction": "tâm hồn"
+    },
+    {
+      "id": 28246,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Dịch sang tiếng Việt: ꪅꪫꪱꪒ ꪅꪫꪱꪒ",
+      "reference": "kêu xoàn xoạt",
+      "prediction": "kêu rên rỉ",
+      "cleaned_prediction": "kêu rên rỉ"
+    },
+    {
+      "id": 5851,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪎꪲꪙ\" có nghĩa là gì?",
+      "reference": "tin, họ",
+      "prediction": "cái chổi (bảng xình)",
+      "cleaned_prediction": "cái chổi (bảng xình)"
+    },
+    {
+      "id": 21864,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪬꪱ ꪵꪎꪫ",
+      "reference": "đòi theo,",
+      "prediction": "cây chà chà (cỏ hả xẻo, tên khoa học là Cinnamomum",
+      "cleaned_prediction": "cây chà chà (cỏ hả xẻo, tên khoa học là Cinnamomum"
+    },
+    {
+      "id": 27042,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪗꪫꪱꪉ ꪗꪫꪱꪉ\" có nghĩa là gì?",
+      "reference": "(nổ) đùng đùng",
+      "prediction": "tung tăng",
+      "cleaned_prediction": "tung tăng"
+    },
+    {
+      "id": 14355,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Từ tiếng Thái \"ꪋꪣꪴ\" có nghĩa là gì?",
+      "reference": "mừng,",
+      "prediction": "đg. chui, lách",
+      "cleaned_prediction": "đg. chui, lách"
+    },
+    {
+      "id": 5188,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪹꪩꪰꪉ ꪀꪱꪉ",
+      "reference": "đg. xuôi ghềnh",
+      "prediction": "đg. đổi dòng, chuyển dòng",
+      "cleaned_prediction": "đg. đổi dòng, chuyển dòng"
+    },
+    {
+      "id": 3424,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪀꪮꪙ",
+      "reference": "vị trí ngủ đêm trên cành cây của chim, gà rừng…",
+      "prediction": "cái cọc, cái gậy",
+      "cleaned_prediction": "cái cọc, cái gậy"
+    },
+    {
+      "id": 16971,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Hãy cho tôi biết nghĩa của từ Thái: ꪨꪮꪙ",
+      "reference": "trụi, trọc; trơ trụi",
+      "prediction": "lõn lỉo",
+      "cleaned_prediction": "lõn lỉo"
+    },
+    {
+      "id": 21589,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪚꪮꪀ ꪵꪬꪫ",
+      "reference": "hoa héo",
+      "prediction": "hoa héo",
+      "cleaned_prediction": "hoa héo"
+    },
+    {
+      "id": 5925,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "\"ꪣꪙꪳ ꪶꪜꪉ\" trong tiếng Thái nghĩa là gì?",
+      "reference": "trơn trượt, lầy lội",
+      "prediction": "mềm bở",
+      "cleaned_prediction": "mềm bở"
+    },
+    {
+      "id": 17314,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "Giải thích nghĩa từ tiếng Thái Việt: ꪬꪙꪳ ꪭꪀꪴ",
+      "reference": "đg. đan sợi ngang, canh (cửi)",
+      "prediction": "tên một loại cây rừng (cỏ hủa hặc)",
+      "cleaned_prediction": "tên một loại cây rừng (cỏ hủa hặc)"
+    },
+    {
+      "id": 7499,
+      "category": "Thái Việt -> Tiếng Việt",
+      "prompt": "\"ꪖꪱꪀ ꪼꪣ\" trong tiếng Thái nghĩa là gì?",
+      "reference": "đẽo gồ",
+      "prediction": "gác gồ",
+      "cleaned_prediction": "gác gồ"
+    }
+  ]
+}

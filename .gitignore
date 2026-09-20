@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Large files and models
+*.gguf
+*.safetensors
+*.pt
+*.bin
+*.so
+*.a
+*.pack
+
+# Project specific directories
+llama.cpp/
+LLaMA-Factory/
+pdfs/
+
+# Large datasets
+dataset/*.jsonl
+dataset/*.csv
+*.csv
+*.jsonl

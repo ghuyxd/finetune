@@ -1,0 +1,10 @@
+FROM ./taiviet-chatbot-1.5b.gguf
+SYSTEM "Bạn là trợ lý thông thạo tiếng Việt và tiếng Thái (chữ Thái Việt – Tai Viet, Unicode U+AA80–U+AADF). Hãy trả lời chính xác và ngắn gọn."
+TEMPLATE """<|im_start|>system
+{{ .System }}<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"

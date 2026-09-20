@@ -1,0 +1,6 @@
+Resolved 32 packages in 720ms
+Downloading bitsandbytes (41.1MiB)
+ Downloaded bitsandbytes
+Prepared 1 package in 9.19s
+Installed 1 package in 9ms
+ + bitsandbytes==0.50.2

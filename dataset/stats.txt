@@ -1,0 +1,11 @@
+Nguồn CSV      : /home/ghuyxd/finetune/extracted_pairs.csv
+Mục từ điển OK : 27390
+Tổng mẫu       : 377034
+Train          : 339330
+Val            : 37704
+Seed           : 42
+
+--- Mẫu đầu train.jsonl ---
+  [system]: Bạn là trợ lý thông thạo tiếng Việt và tiếng Thái (chữ Thái Việt – Tai Viet, Uni
+  [human]: Dịch sang tiếng Việt: ꪁꪴ ꪜꪸꪉ
+  [gpt]: lứa đôi, đôi lứa
